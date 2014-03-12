@@ -44,7 +44,7 @@ package com.skitsanos.api
 				actualUrl += method;
 			}
 
-			trace('JsonBridge call URL: ' + actualUrl);
+			trace('REST API call URL: ' + actualUrl);
 
 			if (params != null)
 			{
@@ -83,7 +83,6 @@ package com.skitsanos.api
 			}
 			else
 			{
-				//http://code.google.com/p/as3httpclientlib/wiki/Examples
 				var client:HttpClient = new HttpClient();
 				var requestGET:HttpRequest = new Get();
 				requestGET.contentType = "application/json";
